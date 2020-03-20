@@ -1,0 +1,15 @@
+@import "nullstyle.scss";
+
+$fz:100px;
+$color_1:#000;
+$color_2:#fff;
+$gray-clr: #9a9a9a;
+
+@mixin fontz($f,$c){
+	font-size: $f;
+	color: $c;
+}
+.navbar {
+	display: flex;
+	background-color: $color_1;
+}
