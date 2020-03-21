@@ -10,6 +10,112 @@ $gray-clr: #9a9a9a;
 	color: $c;
 }
 .navbar {
+	width: 100%;
+	height: 72px;
+	position: fixed;
 	display: flex;
+	justify-content: space-between;
 	background-color: $color_1;
+	align-items: center;
+	font-family: 'Open Sans', sans-serif;
+	img {
+		width: 79px;
+		height: 29px;
+		margin: 0px 0px 0px 150px;
+	}
+	ul {
+		color: $color_2;
+		margin: 0px 148px 0px 0px;
+	 li {
+		display: inline;
+		margin: 0px 47px 0px 0px;
+		opacity: 0.69;
+		a {
+			color: $color_2;
+		}
+	}
+  }
+}
+.header-wrapper {
+	height: 85vh;
+	background-color: $gray-clr;
+	.header {
+		display: grid;
+		grid-template-areas: 'text-b sign';
+		padding-top: 112px;
+		margin: 0 auto;
+		max-width: 1100px;
+		max-height: 400px;
+		.header__text-block {
+			display: grid;
+			grid-gap: 1rem;
+			grid-template-areas: 
+			'logo'
+			'tit'
+			'text'
+			'butt';
+			color: $color_2;
+			grid-area: text-b;
+			.header__logo {
+				grid-area: logo;
+				width: 175px;
+				height: 60px;
+			}
+			.header__tittle {
+				font-weight: 400;
+				font-family: 'Raleway', sans-serif;
+				text-transform: uppercase;
+				font-size: 36px;
+				grid-area: tit;
+			}
+			.header__text {
+				width: 461px;
+				height: 61px;
+				opacity: 0.8;
+				font-family: Raleway;
+				font-size: 16px;
+				font-weight: 300;
+				line-height: 23px;
+				grid-area: text;
+			}
+			.header__button {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: bold;
+				width: 71px;
+				height: 13px;
+			    color: #ffffff;
+				font-size: 15px;
+
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				grid-area: butt;
+				width: 135px;
+				height: 42px;
+				border: 1.2px solid white;
+			}
+		}
+		.header__signup {
+			grid-area: sign;
+		}
+	}
+}
+.brand-bar {
+	margin: 20px 122px;
+	max-width: 1080px;
+	max-height: 61px;
+	display: flex;
+	justify-content: space-between;
+	.brand-bar__text-block {
+		display: flex;
+		align-items: center;
+		.brand-bar__tittle {
+			width: 122px;
+			height: 17px;
+			color: #333333;
+			font-family: "Open Sans";
+			font-size: 20px;
+			font-weight: 700;
+		}
+	}
 }
