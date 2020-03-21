@@ -4,6 +4,7 @@ $fz:100px;
 $color_1:#000;
 $color_2:#fff;
 $gray-clr: #9a9a9a;
+$bc-clr_1: #f5f5f5;
 
 @mixin fontz($f,$c){
 	font-size: $f;
@@ -37,7 +38,7 @@ $gray-clr: #9a9a9a;
   }
 }
 .header-wrapper {
-	height: 85vh;
+	height: 86vh;
 	background-color: $gray-clr;
 	.header {
 		display: grid;
@@ -71,7 +72,6 @@ $gray-clr: #9a9a9a;
 			.header__text {
 				width: 461px;
 				height: 61px;
-				opacity: 0.8;
 				font-family: Raleway;
 				font-size: 16px;
 				font-weight: 300;
@@ -100,15 +100,23 @@ $gray-clr: #9a9a9a;
 		}
 	}
 }
-.brand-bar {
-	margin: 20px 122px;
-	max-width: 1080px;
-	max-height: 61px;
+.brand-bar-wrapper{
+	box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .2);
+	height: 14vh;
 	display: flex;
-	justify-content: space-between;
-	.brand-bar__text-block {
+	align-items: center;
+	.brand-bar {
+		max-width: 1080px;
+		max-height: 61px;
+		//height: 14vh;
+		margin: 20px 122px;
 		display: flex;
-		align-items: center;
+		justify-content: space-between;
+		border-bottom: 1px;
+		.brand-bar__text-block {
+			display: flex;
+			align-items: center;
+		}
 		.brand-bar__tittle {
 			width: 122px;
 			height: 17px;
@@ -116,6 +124,29 @@ $gray-clr: #9a9a9a;
 			font-family: "Open Sans";
 			font-size: 20px;
 			font-weight: 700;
+		}
+		.brand-bar__text {
+			margin-top: 10px;
+			width: 360px;
+			height: 32px;
+			color: #86878b;
+			font-family: "Open Sans";
+			line-height: 20px;
+		}
+		.brand-bar__links {
+			margin-left: 111px;
+		}
+	}
+}
+.feature {
+	.feature__first-page-wrapper {
+		background-color: $bc-clr_1;
+		height: 73vh;
+		.feature__first-page {
+			max-width: 1100px;
+			max-height: 334px;
+			display: grid;
+			margin: 0 auto;
 		}
 	}
 }
